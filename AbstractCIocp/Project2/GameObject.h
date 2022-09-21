@@ -46,7 +46,10 @@ public:
 	
 	void setLookAt(int direction)
 	{
-		if(direction.)
+		if (direction && static_cast<int>(EWSN::EAST) != 0)
+		{
+
+		}
 	}
 
 	void Moveto(float x, float y)
