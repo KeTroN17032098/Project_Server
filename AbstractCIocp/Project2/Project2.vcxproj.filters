@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="BasicThing.h">
+      <Filter>Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="ISocket.h">
+      <Filter>SessionM</Filter>
+    </ClInclude>
+    <ClInclude Include="ISessionManager.h">
+      <Filter>SessionM</Filter>
+    </ClInclude>
+    <ClInclude Include="ISession.h">
+      <Filter>SessionM</Filter>
+    </ClInclude>
+    <ClInclude Include="IPacket.h">
+      <Filter>SessionM</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginManager.h">
+      <Filter>VariousManagers</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicManager.h">
+      <Filter>AbstractThings</Filter>
+    </ClInclude>
+    <ClInclude Include="LobbyManager.h">
+      <Filter>VariousManagers</Filter>
+    </ClInclude>
+    <ClInclude Include="rsa.h">
+      <Filter>CryptLib</Filter>
+    </ClInclude>
+    <ClInclude Include="CryptManager.h">
+      <Filter>CryptLib</Filter>
+    </ClInclude>
+    <ClInclude Include="ProtocolManager.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="DBManager.h">
+      <Filter>DBM</Filter>
+    </ClInclude>
+    <ClInclude Include="LogManager.h">
+      <Filter>LOGM</Filter>
+    </ClInclude>
+    <ClInclude Include="MainManager.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractState.h">
+      <Filter>State</Filter>
+    </ClInclude>
+    <ClInclude Include="CCS.h">
+      <Filter>CriticalSection</Filter>
+    </ClInclude>
+    <ClInclude Include="MemPool.h">
+      <Filter>MemPool</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGameObject.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AbstractIOCP.h">
+      <Filter>AbstractThings</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractIOCP.cpp">
+      <Filter>AbstractThings</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicThing.cpp">
+      <Filter>Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="ISocket.cpp">
+      <Filter>SessionM</Filter>
+    </ClCompile>
+    <ClCompile Include="ISessionManager.cpp">
+      <Filter>SessionM</Filter>
+    </ClCompile>
+    <ClCompile Include="IPacket.cpp">
+      <Filter>SessionM</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginManager.cpp">
+      <Filter>VariousManagers</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicManager.cpp">
+      <Filter>AbstractThings</Filter>
+    </ClCompile>
+    <ClCompile Include="LobbyManager.cpp">
+      <Filter>VariousManagers</Filter>
+    </ClCompile>
+    <ClCompile Include="rsa.cpp">
+      <Filter>CryptLib</Filter>
+    </ClCompile>
+    <ClCompile Include="CryptManager.cpp">
+      <Filter>CryptLib</Filter>
+    </ClCompile>
+    <ClCompile Include="DBManager.cpp">
+      <Filter>DBM</Filter>
+    </ClCompile>
+    <ClCompile Include="LogManager.cpp">
+      <Filter>LOGM</Filter>
+    </ClCompile>
+    <ClCompile Include="MainManager.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="ProtocolManager.cpp">
+      <Filter>Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="VariousStates.h">
+      <Filter>State</Filter>
+    </ClCompile>
+    <ClCompile Include="VariousStates.cpp">
+      <Filter>State</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="AbstractThings">
+      <UniqueIdentifier>{2c3bbea9-650a-44d1-8690-85aff7884347}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Basic">
+      <UniqueIdentifier>{caa43c02-0d89-4ee5-ada3-9e62488e88c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SessionM">
+      <UniqueIdentifier>{128df31a-9482-4c71-9f56-10cd26623b84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VariousManagers">
+      <UniqueIdentifier>{6d5936f3-1b5d-4dfa-b71d-15f652e6c238}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CryptLib">
+      <UniqueIdentifier>{7123dfa4-0a8f-48b0-b574-56c55eca53dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protocol">
+      <UniqueIdentifier>{b5faa212-d65a-4253-b210-3782582e841a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DBM">
+      <UniqueIdentifier>{ac6ffe0d-333c-4a2b-a08a-ea4b1d41bbc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LOGM">
+      <UniqueIdentifier>{6c2637a9-6184-4b9c-a51b-dbc11c4dec29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{df1d0eda-9ff2-45c5-b525-0a58fa9bf3a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="State">
+      <UniqueIdentifier>{49ce5d55-3b86-4a52-a831-e2f029576c32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CriticalSection">
+      <UniqueIdentifier>{eb500bcb-c5f6-4778-a461-f6dea50e961e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MemPool">
+      <UniqueIdentifier>{79bf3000-2b51-4749-9c9e-87eed0eef518}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject">
+      <UniqueIdentifier>{290c17a0-da0e-4591-8818-4a5d271387a4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
