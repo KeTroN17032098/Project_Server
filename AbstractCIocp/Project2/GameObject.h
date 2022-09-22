@@ -1,13 +1,47 @@
 #pragma once
 #include"BasicThing.h"
 #include"MemPool.h"
+#include<map>
 
 enum class GameObjectType
 {
-	NONE=0,//타입 불명
+	NONE=1,//타입 불명
 	PLAYER,//플레이어
 	INTERACTABLE,//상호작용 가능
 	WALL//장애물 및 벽
+};
+
+
+enum class JobType
+{
+	NONE=1,
+	CITIZEN,
+	MAFIA,
+	MERCHANARY
+};
+
+enum class JobDetail
+{
+	NONE=0,
+	NORMAL_CITIZEN,
+	HUNTER_CITIZEN,
+	VIGILANTE_CITIZEN,
+	STAR_CITIZEN,
+	EXOCIST_CITIZEN,
+	CANADA_CITIZEN,
+	MECHANIST_CITIZEN,
+	LOVER_CITIZEN,
+	PRETENDER_CITIZEN,
+	ETC_CITIZEN,
+	NORMAL_MAFIA,
+	ASSASSIN_MAFIA,
+	PRO_MAFIA,
+	LOVER_MAFIA,
+	COSPLAY_MAFIA,
+	ETC_MAFIA,
+	ANGEL,
+	FLU,
+	SERIALKILLER
 };
 
 enum class EWSN
@@ -25,31 +59,49 @@ private:
 	GameObjectType type;
 	Vector2 Pos;
 	Vector2 LookAt;
-	float Collider[4];
+
 public:
-	GameObject(int oid)
+	GameObject(int oid,GameObjectType type)
 	{
 		objectid = oid;
-		type = GameObjectType::NONE;
+		this->type = type;
 		ZeroMemory(&Pos, sizeof(Vector2));
 		ZeroMemory(&LookAt, sizeof(Vector2));
-		ZeroMemory(Collider, sizeof(float)*4);
 	}
 
-	void setCollider(float x, float y)
+	int getOID()
 	{
-		Collider[0] = Pos.x - x/2;
-		Collider[1] = Pos.x + x/2;
-		Collider[2] = Pos.y - y / 2;
-		Collider[3] = Pos.y + y / 2;
+		return objectid;
 	}
+
+	GameObjectType getOTYPE()
+	{
+		return type;
+	}
+
+	Vector2 getPosition()
+	{
+		return Pos;
+	}
+	Vector2 GetLookAt()
+	{
+		return LookAt;
+	}
+
+
 	
 	void setLookAt(int direction)
 	{
+		float k = 0;
 		if (direction && static_cast<int>(EWSN::EAST) != 0)
 		{
-
+			k += 1.0f;
 		}
+		if (direction && static_cast<int>(EWSN::WEST) != 0)
+		{
+			k -= 1.0f;
+		}
+		LookAt.x = k;
 	}
 
 	void Moveto(float x, float y)
@@ -57,5 +109,6 @@ public:
 		Pos.x = x;
 		Pos.y = y;
 	}
+
 
 };

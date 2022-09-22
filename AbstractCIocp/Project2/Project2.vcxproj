@@ -159,6 +159,7 @@
     <ClInclude Include="LogManager.h" />
     <ClInclude Include="MainManager.h" />
     <ClInclude Include="MemPool.h" />
+    <ClInclude Include="MySector.h" />
     <ClInclude Include="MyGameObject.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="ProtocolManager.h" />

@@ -59,6 +59,7 @@
       <Filter>GameObject</Filter>
     </ClInclude>
     <ClInclude Include="GameObject.h" />
+    <ClInclude Include="MySector.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AbstractIOCP.h">
